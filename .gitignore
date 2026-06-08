@@ -1,0 +1,55 @@
+# ===== 데이터셋 (용량 큼 - 깃허브 제외) =====
+# GTSRB 데이터셋 (415MB)
+data/
+# AI Hub 한국 표지판 데이터셋 (38GB)
+yolo/data/
+*.zip
+
+# ===== 사전학습 가중치 (자동 다운로드) =====
+yolov8n.pt
+yolo26n.pt
+
+# ===== 학습 중간 산출물 (용량/불필요) =====
+yolo/checkpoints/traffic_sign/weights/last.pt
+yolo/checkpoints/traffic_sign/train_batch*.jpg
+yolo/checkpoints/traffic_sign/val_batch*.jpg
+yolo/demo_results/
+yolo/checkpoints/traffic_sign/weights/last.pt
+/checkpoints/
+
+# ===== 파이썬 캐시 =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# ===== 가상환경 / IDE =====
+.venv/
+venv/
+env/
+.idea/
+.vscode/
+.claude/
+
+# ===== OS =====
+Thumbs.db
+.DS_Store
+
+# ===== 발표/보고서 자료 (코드 저장소에서 제외) =====
+*.pptx
+*.docx
+*.pdf
+교통표지판_*.txt
+make_ppt.py
+make_ppt.js
+make_dabon.py
+make_final.py
+make_new_ppt.py
+make_report.js
+patch_step4.py
+
+# ===== 환경 정보가 포함된 생성 아티팩트 (제외) =====
+yolo/checkpoints/metrics_summary.png
+yolo/checkpoints/metrics_summary.json
+yolo/checkpoints/training_curves.png
+yolo/checkpoints/traffic_sign/args.yaml
